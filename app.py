@@ -75,5 +75,5 @@ def metrics():
 if __name__ == '__main__':
     import logging
     logging.basicConfig(filename='error.log', level=logging.DEBUG)
-    start_http_server(8088)
-    app.run(debug=True)
+    #start_http_server(8088)
+    app.run(host='0.0.0.0', debug=True)
